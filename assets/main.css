@@ -1,0 +1,265 @@
+@font-face {
+  font-family: MavenPro-Regular;
+  src: url(fonts/MavenPro-Regular.ttf);
+}
+@font-face {
+  font-family: MavenPro-Medium;
+  src: url(fonts/MavenPro-Medium.ttf);
+}
+@font-face {
+  font-family: MavenPro-Bold;
+  src: url(fonts/MavenPro-Bold.ttf);
+}
+@font-face {
+  font-family: MavenPro-Black;
+  src: url(fonts/MavenPro-Black.ttf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  font-family: MavenPro-Regular, Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: transparent;
+}
+a:hover {
+  opacity: 0.5;
+}
+
+button {
+  outline: transparent;
+  cursor: pointer;
+}
+
+input {
+  outline: transparent;
+}
+
+.header {
+  position: relative;
+  padding: 2rem 5% 10rem;
+  background-image: url(img/header_bg.jpg);
+  background-size: cover;
+  color: white;
+}
+.header:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(23, 49, 83, 0.4);
+}
+
+.nav {
+  position: relative;
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+}
+.nav__menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.nav__menu li {
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+.nav__socials {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  font-size: 2rem;
+  color: #cf81fb;
+}
+.nav__socials li {
+  margin-right: 15px;
+}
+
+.intro {
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.hamburger {
+  width: 5rem;
+  height: 6.5rem;
+  cursor: pointer;
+}
+.hamburger:hover .icon {
+  opacity: 0.6;
+}
+.hamburger__menu {
+  display: block;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.hamburger .icon {
+  position: relative;
+  margin-top: -8px;
+  width: 30px;
+  height: 32px;
+  transition: margin-top 0.35s ease-in-out;
+}
+.hamburger .line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 8px;
+  transition: all 0.35s ease-in-out;
+}
+.hamburger .top {
+  top: 0%;
+}
+.hamburger .middle {
+  top: 25%;
+}
+.hamburger .bottom {
+  top: 50%;
+}
+.hamburger .icon.close {
+  margin-top: -16px;
+}
+.hamburger .icon.close .top {
+  transform: rotate(45deg);
+  top: 30%;
+}
+.hamburger .icon.close .middle,
+.hamburger .icon.close .bottom {
+  transform: rotate(-45deg);
+  top: 30%;
+}
+
+h1 {
+  margin: 5rem 0 2rem;
+  font: 600 6.2rem MavenPro-Bold;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.author {
+  text-align: center;
+  font: 400 2.2rem MavenPro-Regular;
+}
+.author span:first-child {
+  margin-right: 0.5rem;
+  font: 400 1.4rem MavenPro-Medium;
+}
+.author span:nth-child(2) {
+  text-transform: uppercase;
+}
+
+.rating {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.active {
+  transform: translateY(0);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.photo-block, .photo-block--3, .photo-block--2 {
+  position: relative;
+  height: 500px;
+  background-image: url(img/banner_1.png);
+  background-repeat: no-repeat;
+}
+.photo-block--2 {
+  background-image: url(img/banner_2.jpg);
+}
+.photo-block--3 {
+  background-image: url(img/banner_3.jpg);
+}
+
+.how-it-works {
+  position: relative;
+  background-image: url(img/dollar_shape.png);
+  background-color: #66cfcf;
+}
+
+.footer {
+  background-color: #6b3a96;
+}
+.footer__logo {
+  padding: 20rem 50% 1.5rem 50%;
+  background-image: url(img/footer_bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 0 10% 2rem 12%;
+  color: white;
+}
+.footer-nav__menu {
+  display: flex;
+  width: 31%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.footer-nav__menu li:not(:last-child) {
+  margin-right: 2rem;
+}
+.footer-nav a {
+  transition: box-shadow 0.2s ease-in-out;
+}
+.footer-nav a:hover {
+  opacity: 0.5;
+}
+.footer-nav a[href^="tel:"] {
+  font: 400 3rem/1rem MavenPro-Regular;
+}
+.footer-nav a[href^="mailto:"] {
+  font-size: 1.3rem;
+}
+.footer-nav__socials {
+  display: flex;
+  margin-top: -2px;
+}
+.footer-nav__socials li:not(:first-child) {
+  margin-left: 2rem;
+}
+.footer-nav__socials a {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

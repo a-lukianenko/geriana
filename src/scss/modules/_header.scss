@@ -1,0 +1,143 @@
+// HEADER
+.header {
+  position: relative;
+  padding: 2rem 5% 10rem;
+  background-image: url(img/header_bg.jpg);
+  background-size: cover;
+  color: white;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(23, 49, 83, 0.4);
+  }
+}
+
+.nav {
+  position: relative;
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+  &__menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    li {
+      margin: 0 10px;
+      font-size: 1.1rem;
+    }
+  }
+  &__socials {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    font-size: 2rem;
+    color: #cf81fb;
+    li {
+      margin-right: 15px;
+    }
+  }
+}
+
+.intro {
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.hamburger {
+  width: 5rem;
+  height: 6.5rem;
+  cursor: pointer;
+  &:hover .icon {
+    opacity: 0.6;
+  }
+  &__menu {
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .icon {
+    position: relative;
+    margin-top: -8px;
+    width: 30px;
+    height: 32px;
+    transition: margin-top 0.35s ease-in-out;
+  }
+  .line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 8px;
+    transition: all 0.35s ease-in-out;
+  }
+  .top {
+    top: 0%;
+  }
+  .middle {
+    top: 25%;
+  }
+  .bottom {
+    top: 50%;
+  }
+
+  .icon.close {
+    margin-top: -16px;
+  }
+  .icon.close .top {
+    transform: rotate(45deg);
+    top: 30%;
+  }
+  .icon.close .middle,
+  .icon.close .bottom {
+    transform: rotate(-45deg);
+    top: 30%;
+  }
+}
+
+h1 {
+  margin: 5rem 0 2rem;
+  font: 600 6.2rem $mavenBold;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.author {
+  text-align: center;
+  font: 400 2.2rem $mavenRegular;
+
+  span:first-child {
+    margin-right: 0.5rem;
+    font: 400 1.4rem $mavenMedium;
+  }
+
+  span:nth-child(2) {
+    text-transform: uppercase;
+  }
+}
+
+.rating {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+// Slide menu down
+.active {
+  transform: translateY(0);
+}
+
+// Hide 'menu'
+.hide {
+  opacity: 0;
+}

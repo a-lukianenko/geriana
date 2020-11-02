@@ -1,0 +1,52 @@
+// FOOTER
+.footer {
+  background-color: #6b3a96;
+  &__logo {
+    padding: 20rem 50% 1.5rem 50%;
+    background-image: url(img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 0 10% 2rem 12%;
+  color: white;
+  &__menu {
+    display: flex;
+    width: 31%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    li:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  a {
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  a:hover {
+    opacity: 0.5;
+    // box-shadow: 0 7px 0 0 #6b3a96, 0 9px 0 0 white;
+  }
+  a[href^="tel:"] {
+    font: 400 3rem/1rem $mavenRegular;
+  }
+  a[href^="mailto:"] {
+    font-size: 1.3rem;
+  }
+  &__socials {
+    display: flex;
+    margin-top: -2px;
+    li:not(:first-child) {
+      margin-left: 2rem;
+    }
+    a {
+      font-size: 2rem;
+    }
+  }
+}
