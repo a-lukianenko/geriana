@@ -1,6 +1,55 @@
 // HOW IT WORKS
 .how-it-works {
-  position: relative;
-  background-image: url(img/dollar_shape.png);
+  display: flex;
+  padding: 12rem 2% 12rem 4%;
   background-color: $cyan;
+  color: white;
+  &__summary {
+    h2 {
+      margin-top: 6rem;
+      margin-bottom: 8rem;
+      font: 8rem $mavenBlack;
+    }
+    a {
+      border: 2px solid white;
+      border-radius: 6px;
+      padding: 1.7rem 3.5rem;
+      width: 222px;
+      font: 1.8rem $mavenBold;
+      text-transform: uppercase;
+    }
+  }
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 22rem;
+    .step {
+      width: 75%;
+    }
+    .step:first-child {
+      margin-bottom: 6rem;
+    }
+
+    .step:nth-child(3) {
+      margin-top: 4rem;
+    }
+
+    .step:last-child {
+      margin-top: 6rem;
+    }
+
+    .step:nth-child(even) {
+      align-self: flex-end;
+      text-align: right;
+    }
+    h3 {
+      margin-bottom: 1rem;
+      font: 2.2rem $mavenBold;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
 }

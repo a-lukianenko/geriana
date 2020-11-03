@@ -1,1 +1,13 @@
 // CALL TO JOIN
+.call-to-join {
+  padding: 2.5rem 2%;
+  background-color: #eff7f7;
+  text-align: center;
+  font: 1.8rem $mavenMedium;
+  color: $darkBlue;
+  a {
+    color: $cyan;
+    font-family: $mavenBold;
+    text-decoration: underline;
+  }
+}

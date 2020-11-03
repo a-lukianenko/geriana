@@ -1,6 +1,6 @@
 @font-face {
   font-family: MavenPro-Regular;
-  src: url("./fonts/MavenPro-Regular.ttf");
+  src: url(fonts/MavenPro-Regular.ttf);
 }
 @font-face {
   font-family: MavenPro-Medium;
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  width: 100%;
+  max-width: 1440px;
   margin: auto;
   font-family: MavenPro-Regular, Arial, sans-serif;
 }
@@ -41,9 +41,10 @@ a {
   text-decoration: none;
   color: inherit;
   outline: transparent;
+  transition: all 0.25s ease-out;
 }
 a:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 button {
@@ -57,7 +58,7 @@ input {
 
 .header {
   position: relative;
-  padding: 2rem 5% 10rem;
+  padding: 2rem 2% 12rem;
   background-image: url(img/header_bg.jpg);
   background-size: cover;
   color: white;
@@ -65,138 +66,136 @@ input {
 .header:before {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   z-index: 0;
-  width: 100%;
-  height: 100%;
   content: "";
   background-color: rgba(23, 49, 83, 0.4);
 }
 
 .nav {
   position: relative;
-  padding: 2rem 0;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
 }
-.nav__menu {
+.nav__menu-left {
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
 }
-.nav__menu li {
-  margin: 0 10px;
-  font-size: 1.1rem;
+.nav__menu-left img {
+  width: 260px;
+  height: 60px;
 }
-.nav__socials {
-  position: absolute;
-  top: 10px;
-  left: 20px;
+.nav__menu-left .menu-item a {
+  display: block;
+  margin-bottom: 1rem;
+  border: 2px solid white;
+  border-radius: 0.7rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.6rem;
+  font-family: MavenPro-Bold, sans-serif;
+}
+.nav__menu-left .fa-question-circle {
+  margin-right: 0.8rem;
+}
+.nav__menu-right {
   display: flex;
-  font-size: 2rem;
-  color: #cf81fb;
-}
-.nav__socials li {
-  margin-right: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 25%;
+  font-size: 1.6rem;
 }
 
 .intro {
   position: relative;
+  margin-top: 9rem;
+  text-align: center;
 }
-
-.brand {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3rem;
+.intro h1 {
+  font: 900 8rem MavenPro-Black;
+  color: #66cfcf;
 }
-
-.hamburger {
-  width: 5rem;
-  height: 6.5rem;
-  cursor: pointer;
+.intro h2 {
+  font: 900 5.8rem MavenPro-Black;
 }
-.hamburger:hover .icon {
-  opacity: 0.6;
+.intro h3 {
+  margin-top: 2rem;
+  font: 400 2.6rem MavenPro-Regular;
 }
-.hamburger__menu {
+.intro h3 b {
+  font: 2.6rem MavenPro-Bold;
+  color: #66cfcf;
+}
+.intro a {
   display: block;
-  text-align: center;
-  letter-spacing: 1px;
-}
-.hamburger .icon {
-  position: relative;
-  margin-top: -8px;
-  width: 30px;
-  height: 32px;
-  transition: margin-top 0.35s ease-in-out;
-}
-.hamburger .line {
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background: white;
-  border-radius: 8px;
-  transition: all 0.35s ease-in-out;
-}
-.hamburger .top {
-  top: 0%;
-}
-.hamburger .middle {
-  top: 25%;
-}
-.hamburger .bottom {
-  top: 50%;
-}
-.hamburger .icon.close {
-  margin-top: -16px;
-}
-.hamburger .icon.close .top {
-  transform: rotate(45deg);
-  top: 30%;
-}
-.hamburger .icon.close .middle,
-.hamburger .icon.close .bottom {
-  transform: rotate(-45deg);
-  top: 30%;
-}
-
-h1 {
-  margin: 5rem 0 2rem;
-  font: 600 6.2rem MavenPro-Bold;
-  letter-spacing: 4px;
-  text-align: center;
-}
-
-.author {
-  text-align: center;
-  font: 400 2.2rem MavenPro-Regular;
-}
-.author span:first-child {
-  margin-right: 0.5rem;
-  font: 400 1.4rem MavenPro-Medium;
-}
-.author span:nth-child(2) {
+  margin: 0 auto;
+  margin-top: 3rem;
+  border-radius: 4px;
+  padding: 1.5rem 3rem;
+  width: 230px;
+  font: 1.8rem MavenPro-Bold;
   text-transform: uppercase;
+  background-color: #ff5151;
 }
 
-.rating {
+.call-to-join {
+  padding: 2.5rem 2%;
+  background-color: #eff7f7;
   text-align: center;
-  margin-top: 1.5rem;
+  font: 1.8rem MavenPro-Medium;
+  color: #0b2a37;
+}
+.call-to-join a {
+  color: #66cfcf;
+  font-family: MavenPro-Bold;
+  text-decoration: underline;
 }
 
-.active {
-  transform: translateY(0);
+.service-info {
+  padding: 8rem 2%;
+  padding-bottom: 0;
+  text-align: center;
+  color: #0b2a37;
 }
-
-.hide {
-  opacity: 0;
+.service-info h2 {
+  font: 3.6rem MavenPro-Black;
+}
+.service-info .options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 5rem;
+}
+.service-info .option {
+  position: relative;
+  height: 250px;
+}
+.service-info .option__icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #66cfcf;
+}
+.service-info h3 {
+  margin-top: 3rem;
+  font: 2.2rem MavenPro-Bold;
+}
+.service-info p {
+  position: absolute;
+  bottom: 0%;
+  font-size: 1.6rem;
 }
 
 .photo-block, .photo-block--3, .photo-block--2 {
-  position: relative;
-  height: 500px;
+  height: 540px;
+  padding-top: 9rem;
   background-image: url(img/banner_1.png);
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
 }
 .photo-block--2 {
   background-image: url(img/banner_2.jpg);
@@ -206,9 +205,53 @@ h1 {
 }
 
 .how-it-works {
-  position: relative;
-  background-image: url(img/dollar_shape.png);
+  display: flex;
+  padding: 12rem 2% 12rem 4%;
   background-color: #66cfcf;
+  color: white;
+}
+.how-it-works__summary h2 {
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  font: 8rem MavenPro-Black;
+}
+.how-it-works__summary a {
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 1.7rem 3.5rem;
+  width: 222px;
+  font: 1.8rem MavenPro-Bold;
+  text-transform: uppercase;
+}
+.how-it-works__steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 22rem;
+}
+.how-it-works__steps .step {
+  width: 75%;
+}
+.how-it-works__steps .step:first-child {
+  margin-bottom: 6rem;
+}
+.how-it-works__steps .step:nth-child(3) {
+  margin-top: 4rem;
+}
+.how-it-works__steps .step:last-child {
+  margin-top: 6rem;
+}
+.how-it-works__steps .step:nth-child(even) {
+  align-self: flex-end;
+  text-align: right;
+}
+.how-it-works__steps h3 {
+  margin-bottom: 1rem;
+  font: 2.2rem MavenPro-Bold;
+}
+.how-it-works__steps p {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 .footer {

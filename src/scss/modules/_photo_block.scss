@@ -1,9 +1,10 @@
 // PHOTO BLOCK
 .photo-block {
-  position: relative;
-  height: 500px;
+  height: 540px;
+  padding-top: 9rem;
   background-image: url(img/banner_1.png);
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
   &--2 {
     @extend .photo-block;
     background-image: url(img/banner_2.jpg);

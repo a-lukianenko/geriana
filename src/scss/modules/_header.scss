@@ -1,17 +1,17 @@
 // HEADER
 .header {
   position: relative;
-  padding: 2rem 5% 10rem;
+  padding: 2rem 2% 12rem;
   background-image: url(img/header_bg.jpg);
   background-size: cover;
   color: white;
   &:before {
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
     z-index: 0;
-    width: 100%;
-    height: 100%;
     content: "";
     background-color: rgba(23, 49, 83, 0.4);
   }
@@ -19,125 +19,69 @@
 
 .nav {
   position: relative;
-  padding: 2rem 0;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  &__menu {
+  &__menu-left {
     display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    li {
-      margin: 0 10px;
-      font-size: 1.1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    img {
+      width: 260px;
+      height: 60px;
+    }
+    .menu-item a {
+      display: block;
+      margin-bottom: 1rem;
+      border: 2px solid white;
+      border-radius: 0.7rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 1.6rem;
+      font-family: $mavenBold, sans-serif;
+    }
+    .fa-question-circle {
+      margin-right: 0.8rem;
     }
   }
-  &__socials {
-    position: absolute;
-    top: 10px;
-    left: 20px;
+  &__menu-right {
     display: flex;
-    font-size: 2rem;
-    color: #cf81fb;
-    li {
-      margin-right: 15px;
-    }
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 25%;
+    font-size: 1.6rem;
   }
 }
 
 .intro {
   position: relative;
-}
-
-.brand {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3rem;
-}
-
-.hamburger {
-  width: 5rem;
-  height: 6.5rem;
-  cursor: pointer;
-  &:hover .icon {
-    opacity: 0.6;
+  margin-top: 9rem;
+  text-align: center;
+  h1 {
+    font: 900 8rem $mavenBlack;
+    color: $cyan;
   }
-  &__menu {
+  h2 {
+    font: 900 5.8rem $mavenBlack;
+  }
+  h3 {
+    margin-top: 2rem;
+    font: 400 2.6rem $mavenRegular;
+    b {
+      font: 2.6rem $mavenBold;
+      color: $cyan;
+    }
+  }
+  a {
     display: block;
-    text-align: center;
-    letter-spacing: 1px;
-  }
-
-  .icon {
-    position: relative;
-    margin-top: -8px;
-    width: 30px;
-    height: 32px;
-    transition: margin-top 0.35s ease-in-out;
-  }
-  .line {
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: white;
-    border-radius: 8px;
-    transition: all 0.35s ease-in-out;
-  }
-  .top {
-    top: 0%;
-  }
-  .middle {
-    top: 25%;
-  }
-  .bottom {
-    top: 50%;
-  }
-
-  .icon.close {
-    margin-top: -16px;
-  }
-  .icon.close .top {
-    transform: rotate(45deg);
-    top: 30%;
-  }
-  .icon.close .middle,
-  .icon.close .bottom {
-    transform: rotate(-45deg);
-    top: 30%;
-  }
-}
-
-h1 {
-  margin: 5rem 0 2rem;
-  font: 600 6.2rem $mavenBold;
-  letter-spacing: 4px;
-  text-align: center;
-}
-
-.author {
-  text-align: center;
-  font: 400 2.2rem $mavenRegular;
-
-  span:first-child {
-    margin-right: 0.5rem;
-    font: 400 1.4rem $mavenMedium;
-  }
-
-  span:nth-child(2) {
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 4px;
+    padding: 1.5rem 3rem;
+    width: 230px;
+    font: 1.8rem $mavenBold;
     text-transform: uppercase;
+    background-color: $red;
   }
-}
-
-.rating {
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
-// Slide menu down
-.active {
-  transform: translateY(0);
-}
-
-// Hide 'menu'
-.hide {
-  opacity: 0;
 }

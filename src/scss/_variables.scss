@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: MavenPro-Regular;
-  src: url("./fonts/MavenPro-Regular.ttf");
+  src: url(fonts/MavenPro-Regular.ttf);
 }
 
 @font-face {
@@ -26,5 +26,6 @@ $mavenBold: MavenPro-Bold;
 $mavenBlack: MavenPro-Black;
 
 // COLORS
+$darkBlue: #0b2a37;
 $cyan: #66cfcf;
 $red: #ff5151;
