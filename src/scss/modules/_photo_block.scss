@@ -7,10 +7,12 @@
   background-clip: content-box;
   &--2 {
     @extend .photo-block;
+    padding: 0;
     background-image: url(img/banner_2.jpg);
   }
   &--3 {
     @extend .photo-block;
+    padding: 0;
     background-image: url(img/banner_3.jpg);
   }
 }

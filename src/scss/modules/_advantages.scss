@@ -1,1 +1,20 @@
 // ADVANTAGES
+.advantages {
+  padding: 10rem 4%;
+  background-color: #005173;
+  color: white;
+  h2 {
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+    font: 8rem $mavenBlack;
+  }
+  a {
+    display: block;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 1.7rem 3.5rem;
+    width: 222px;
+    font: 1.8rem $mavenBold;
+    text-transform: uppercase;
+  }
+}

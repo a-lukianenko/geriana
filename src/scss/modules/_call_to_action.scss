@@ -1,1 +1,23 @@
 // CALL TO ACTION
+.call-to-action {
+  padding: 3rem 2%;
+  color: $darkBlue;
+  text-align: center;
+  h2 {
+    font: 3.6rem $mavenBlack;
+  }
+  p {
+    font: 1.6rem $mavenMedium;
+  }
+  a {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    width: 155px;
+    background-color: $red;
+    color: white;
+  }
+}

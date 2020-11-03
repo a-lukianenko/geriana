@@ -1,1 +1,55 @@
 // FEEDBACK
+.feedback {
+  padding: 7rem 2% 10rem;
+  color: $darkBlue;
+  h2 {
+    font: 3.6rem $mavenBlack;
+    text-align: center;
+  }
+  &__posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-top: 7rem;
+  }
+  .post {
+    &__text {
+      position: relative;
+      padding: 3rem 2rem;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      background-color: #eff7f7;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        bottom: -15px;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 35px solid #eff7f7;
+      }
+    }
+  }
+  .author {
+    position: relative;
+    margin-top: 2rem;
+    text-align: right;
+    padding-right: 6rem;
+    font-size: 1.6rem;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: crimson;
+    }
+    &__name {
+      font-family: $mavenBold;
+    }
+  }
+}

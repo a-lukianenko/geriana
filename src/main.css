@@ -198,9 +198,11 @@ input {
   background-clip: content-box;
 }
 .photo-block--2 {
+  padding: 0;
   background-image: url(img/banner_2.jpg);
 }
 .photo-block--3 {
+  padding: 0;
   background-image: url(img/banner_3.jpg);
 }
 
@@ -252,6 +254,102 @@ input {
 .how-it-works__steps p {
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+.feedback {
+  padding: 7rem 2% 10rem;
+  color: #0b2a37;
+}
+.feedback h2 {
+  font: 3.6rem MavenPro-Black;
+  text-align: center;
+}
+.feedback__posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin-top: 7rem;
+}
+.feedback .post__text {
+  position: relative;
+  padding: 3rem 2rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  background-color: #eff7f7;
+}
+.feedback .post__text:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  bottom: -15px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 35px solid #eff7f7;
+}
+.feedback .author {
+  position: relative;
+  margin-top: 2rem;
+  text-align: right;
+  padding-right: 6rem;
+  font-size: 1.6rem;
+}
+.feedback .author:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: crimson;
+}
+.feedback .author__name {
+  font-family: MavenPro-Bold;
+}
+
+.advantages {
+  padding: 10rem 4%;
+  background-color: #005173;
+  color: white;
+}
+.advantages h2 {
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  font: 8rem MavenPro-Black;
+}
+.advantages a {
+  display: block;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 1.7rem 3.5rem;
+  width: 222px;
+  font: 1.8rem MavenPro-Bold;
+  text-transform: uppercase;
+}
+
+.call-to-action {
+  padding: 3rem 2%;
+  color: #0b2a37;
+  text-align: center;
+}
+.call-to-action h2 {
+  font: 3.6rem MavenPro-Black;
+}
+.call-to-action p {
+  font: 1.6rem MavenPro-Medium;
+}
+.call-to-action a {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  width: 155px;
+  background-color: #ff5151;
+  color: white;
 }
 
 .footer {
