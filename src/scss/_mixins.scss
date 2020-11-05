@@ -1,1 +1,7 @@
 // MIXINS
+@mixin wrapper($y, $x: 5%) {
+  padding: $y $x;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

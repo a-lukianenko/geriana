@@ -1,0 +1,146 @@
+// TABLET WIDTH
+
+@media (max-width: $tabletWidth) {
+  // HEADER
+  .header {
+    .nav {
+      flex-direction: row-reverse;
+      padding: 0 2%;
+    }
+    .nav__menu-right {
+      li:first-child,
+      li:nth-child(2) {
+        display: none;
+      }
+    }
+
+    .nav__menu-left {
+      width: auto;
+      .menu {
+        display: none;
+      }
+    }
+    .intro h3 {
+      padding: 0 3rem;
+    }
+  }
+  .menu-hidden {
+    display: block;
+    position: absolute;
+    transform: translateY(-100%);
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 2rem;
+    padding-top: 10rem;
+    background-color: transparentize($blue, 0.6);
+    transition: transform 0.5s ease-in-out;
+
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      font-size: 1.4rem;
+    }
+    .fa-question-circle {
+      margin-right: 8px;
+    }
+  }
+  .menu-hidden.unhide {
+    transform: translateY(0);
+  }
+
+  // SERVICE INFO
+  .service-info {
+    h2 {
+      font-size: 2.8rem;
+    }
+    .option {
+      height: 270px;
+      h3 {
+        font-size: 1.8rem;
+      }
+      p {
+        width: 76%;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  // PHOTO BLOCKS
+  .photo-block {
+    height: 350px;
+  }
+
+  // HOW IT WORKS
+  .how-it-works {
+    flex-direction: column;
+    padding: 5rem 4% 7rem;
+    &__summary {
+      margin-bottom: 6rem;
+      width: 100%;
+      h2 {
+        margin-top: 0;
+        margin-bottom: 5rem;
+        font-size: 4rem;
+      }
+      a {
+        padding: 1rem 2.5rem;
+        font-size: 1.4rem;
+      }
+    }
+    &__steps {
+      padding-left: 8rem;
+      padding-right: 8rem;
+      .step {
+        width: 80%;
+      }
+    }
+  }
+
+  // FEEDBACK
+  .feedback {
+    h2 {
+      font-size: 3rem;
+    }
+    &__posts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // ADVANTAGES
+  .advantages__list {
+    width: 100%;
+  }
+
+  // CALL TO ACTION
+  .call-to-action {
+    h2 {
+      font-size: 3rem;
+    }
+    a {
+      font-size: 1.4rem;
+      padding: 1rem 2rem;
+      width: 190px;
+    }
+  }
+
+  // FOOTER
+  .footer {
+    flex-direction: column-reverse;
+    h3 {
+      margin-right: 3rem;
+    }
+    .credentials {
+      text-align: center;
+    }
+    .social-buttons {
+      justify-content: center;
+    }
+    &__navigation {
+      width: 100%;
+      justify-content: space-around;
+      margin-bottom: 3rem;
+    }
+  }
+}

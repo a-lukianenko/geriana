@@ -1,0 +1,104 @@
+// SMALL TABLET WIDTH
+
+@media (max-width: $smTabletWidth) {
+  // HEADER
+  .header {
+    padding-bottom: 8rem;
+    .brand img {
+      width: 190px;
+    }
+    h1 {
+      font-size: 3.6rem;
+    }
+    h2 {
+      font-size: 2.8rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+      b {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // SERVICE INFO
+  .service-info {
+    h2 {
+      font-size: 3.2rem;
+    }
+    .options {
+      grid-template-columns: 1fr;
+      gap: 7rem 3rem;
+    }
+    .option {
+      height: 220px;
+      p {
+        width: 60%;
+      }
+    }
+  }
+
+  // HOW IT WORKS
+  .how-it-works {
+    padding: 5rem 5% 7rem;
+    &__summary {
+      text-align: center;
+    }
+    &__steps {
+      padding-left: 9rem;
+      padding-right: 9rem;
+    }
+  }
+
+  // FEEDBACK
+  .feedback__posts {
+    grid-template-columns: 1fr;
+  }
+
+  // PHOTO BLOCKS
+  .photo-block {
+    background-position: center;
+  }
+
+  // ADVANTAGES
+  .advantages {
+    flex-direction: column;
+    padding: 3rem 7% 4rem;
+    &__summary {
+      margin-bottom: 5rem;
+      text-align: center;
+      h2 {
+        margin-top: 0rem;
+        margin-bottom: 3rem;
+        font-size: 4rem;
+      }
+      a {
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        width: 210px;
+        font-size: 1.4rem;
+      }
+    }
+    &__list p {
+      margin-bottom: 5rem;
+    }
+  }
+
+  // CALL TO ACTION
+  .call-to-action {
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+
+  // FOOTER
+  .footer {
+    padding: 5rem 7% 8rem;
+    &__navigation {
+      flex-direction: column;
+      .navigation__block {
+        margin-bottom: 1.7rem;
+      }
+    }
+  }
+}

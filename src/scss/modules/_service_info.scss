@@ -1,7 +1,6 @@
 // SERVICE INFO
 .service-info {
-  padding: 8rem 2%;
-  padding-bottom: 0;
+  padding: 8rem 2% 10rem;
   text-align: center;
   color: $darkBlue;
   h2 {
@@ -10,18 +9,45 @@
   .options {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
     margin-top: 5rem;
   }
   .option {
     position: relative;
-    height: 250px;
+    padding: 0 1rem;
+    padding-top: 10rem;
+    height: 290px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+    }
   }
 
-  .option__icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-color: $cyan;
+  .option:first-child:before {
+    width: 117px;
+    height: 120px;
+    background: url(img/css_sprites.png) -609px -10px;
+  }
+
+  .option:nth-child(2):before {
+    width: 163px;
+    height: 109px;
+    background: url(img/css_sprites.png) -888px -10px;
+  }
+
+  .option:nth-child(3):before {
+    width: 107px;
+    height: 122px;
+    background: url(img/css_sprites.png) -482px -10px;
+  }
+
+  .option:last-child:before {
+    width: 122px;
+    height: 118px;
+    background: url(img/css_sprites.png) -746px -10px;
   }
 
   h3 {

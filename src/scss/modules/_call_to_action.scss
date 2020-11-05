@@ -1,6 +1,6 @@
 // CALL TO ACTION
 .call-to-action {
-  padding: 3rem 2%;
+  padding: 4rem 2%;
   color: $darkBlue;
   text-align: center;
   h2 {
@@ -12,11 +12,12 @@
   a {
     display: block;
     margin: 0 auto;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     border-radius: 6px;
+    font-size: 1.6rem;
     text-transform: uppercase;
     padding: 1rem 2.5rem;
-    width: 155px;
+    width: 220px;
     background-color: $red;
     color: white;
   }

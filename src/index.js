@@ -1,6 +1,20 @@
-import $ from "jquery";
 import "./scss/main.scss";
+// import "./fake.scss";
 
-$(function () {
-  console.log("Hello");
-});
+function toggleMenu() {
+  if (window.innerWidth <= 768) {
+    const btn = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu-hidden");
+    btn.onclick = function () {
+      if (menu.classList.contains("unhide")) {
+        menu.classList.remove("unhide");
+      } else {
+        menu.classList.add("unhide");
+      }
+    };
+  }
+}
+
+window.onload = function () {
+  toggleMenu();
+};

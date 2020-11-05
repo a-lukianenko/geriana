@@ -1,52 +1,59 @@
 // FOOTER
+
 .footer {
-  background-color: #6b3a96;
-  &__logo {
-    padding: 20rem 50% 1.5rem 50%;
-    background-image: url(img/footer_bg.png);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 9rem;
+  color: white;
+  background-color: $darkBlue;
+}
+
+.credentials {
+  .social-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    h3 {
+      font: 2.2rem $mavenBold;
+    }
+    li {
+      display: inline-block;
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      i {
+        font-size: 3rem;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    opacity: 0.5;
   }
 }
 
-.footer-nav {
+.footer__navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 3rem;
-  padding: 0 10% 2rem 12%;
-  color: white;
-  &__menu {
-    display: flex;
-    width: 31%;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    li:not(:last-child) {
-      margin-right: 2rem;
-    }
+  width: 50%;
+  h3 {
+    margin-top: 1rem;
+    font: 2.2rem $mavenBold;
   }
-  a {
-    transition: box-shadow 0.2s ease-in-out;
-  }
-  a:hover {
-    opacity: 0.5;
-    // box-shadow: 0 7px 0 0 #6b3a96, 0 9px 0 0 white;
-  }
-  a[href^="tel:"] {
-    font: 400 3rem/1rem $mavenRegular;
-  }
-  a[href^="mailto:"] {
-    font-size: 1.3rem;
-  }
-  &__socials {
-    display: flex;
-    margin-top: -2px;
-    li:not(:first-child) {
-      margin-left: 2rem;
-    }
-    a {
-      font-size: 2rem;
+  ul {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    opacity: 0.8;
+    li {
+      margin-bottom: 1.5rem;
     }
   }
 }

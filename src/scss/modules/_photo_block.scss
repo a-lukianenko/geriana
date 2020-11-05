@@ -1,10 +1,9 @@
 // PHOTO BLOCK
 .photo-block {
   height: 540px;
-  padding-top: 9rem;
   background-image: url(img/banner_1.png);
   background-size: cover;
-  background-clip: content-box;
+  background-position-y: 25%;
   &--2 {
     @extend .photo-block;
     padding: 0;
