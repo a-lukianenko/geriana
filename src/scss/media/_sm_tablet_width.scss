@@ -5,7 +5,7 @@
   .header {
     padding-bottom: 8rem;
     .brand img {
-      width: 190px;
+      width: 180px;
     }
     h1 {
       font-size: 3.6rem;
@@ -93,7 +93,24 @@
 
   // FOOTER
   .footer {
+    flex-direction: row-reverse;
     padding: 5rem 7% 8rem;
+    .credentials img {
+      width: 180px;
+      height: auto;
+    }
+    .social-buttons {
+      margin-top: 2rem;
+      h3 {
+        font-size: 1.6rem;
+      }
+      ul i {
+        font-size: 2rem;
+      }
+    }
+    .copyright {
+      font-size: 1rem;
+    }
     &__navigation {
       flex-direction: column;
       .navigation__block {

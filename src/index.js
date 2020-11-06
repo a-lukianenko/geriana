@@ -1,5 +1,4 @@
-import "./scss/main.scss";
-// import "./fake.scss";
+// import "./scss/main.scss";
 
 function toggleMenu() {
   if (window.innerWidth <= 768) {

@@ -2,22 +2,22 @@
 
 @font-face {
   font-family: MavenPro-Regular;
-  src: url(MavenPro-Regular.ttf);
+  src: url(fonts/MavenPro-Regular.ttf);
 }
 
 @font-face {
   font-family: MavenPro-Medium;
-  src: url(MavenPro-Medium.ttf);
+  src: url(fonts/MavenPro-Medium.ttf);
 }
 
 @font-face {
   font-family: MavenPro-Bold;
-  src: url(MavenPro-Bold.ttf);
+  src: url(fonts/MavenPro-Bold.ttf);
 }
 
 @font-face {
   font-family: MavenPro-Black;
-  src: url(MavenPro-Black.ttf);
+  src: url(fonts/MavenPro-Black.ttf);
 }
 
 $mavenRegular: MavenPro-Regular;
@@ -38,4 +38,4 @@ $laptopWidth: 1024px;
 $tabletWidth: 768px;
 $smTabletWidth: 640px;
 $phoneWidth: 480px;
-$smPhoneWidth: 320px;
+$mdPhoneWidth: 375px;

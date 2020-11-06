@@ -122,6 +122,10 @@ input {
 .nav__menu-right .hamburger {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+.nav__menu-right .hamburger:hover {
+  opacity: 0.7;
 }
 .nav__menu-right .fa-bars {
   font-size: 2.5rem;
@@ -191,7 +195,7 @@ input {
   position: relative;
   padding: 0 1rem;
   padding-top: 10rem;
-  height: 290px;
+  height: 270px;
 }
 .service-info .option:before {
   content: "";
@@ -537,7 +541,6 @@ input {
     position: relative;
     padding: 0 6rem;
     padding-top: 10rem;
-    height: 280px;
   }
   .service-info .option p {
     left: 50%;
@@ -653,6 +656,10 @@ input {
   }
   .header .nav__menu-right {
     width: 23%;
+  }
+
+  .service-info .option {
+    height: 265px;
   }
 
   .photo-block, .photo-block--2, .photo-block--3 {
@@ -839,7 +846,7 @@ input {
     padding-bottom: 8rem;
   }
   .header .brand img {
-    width: 190px;
+    width: 180px;
   }
   .header h1 {
     font-size: 3.6rem;
@@ -915,13 +922,259 @@ input {
   }
 
   .footer {
+    flex-direction: row-reverse;
     padding: 5rem 7% 8rem;
+  }
+  .footer .credentials img {
+    width: 180px;
+    height: auto;
+  }
+  .footer .social-buttons {
+    margin-top: 2rem;
+  }
+  .footer .social-buttons h3 {
+    font-size: 1.6rem;
+  }
+  .footer .social-buttons ul i {
+    font-size: 2rem;
+  }
+  .footer .copyright {
+    font-size: 1rem;
   }
   .footer__navigation {
     flex-direction: column;
   }
   .footer__navigation .navigation__block {
     margin-bottom: 1.7rem;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 1.5rem 2% 8rem;
+  }
+  .header a.brand {
+    padding: 0;
+  }
+  .header a.brand img {
+    width: 140px;
+  }
+  .header h1 {
+    font-size: 2.6rem;
+  }
+  .header h2 {
+    font-size: 2.2rem;
+  }
+  .header h3 {
+    font-size: 1.4rem;
+  }
+  .header h3 b {
+    font-size: 1.6rem;
+  }
+  .header .menu-hidden {
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+  }
+  .header .menu-hidden .menu {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .header .menu-hidden .menu li {
+    margin-bottom: 0.6rem;
+  }
+  .header .intro {
+    margin-top: 11rem;
+  }
+
+  .call-to-join {
+    font-size: 1.6rem;
+  }
+
+  .service-info h2 {
+    font-size: 2.8rem;
+  }
+  .service-info .option h3 {
+    font-size: 1.6rem;
+  }
+  .service-info .option:first-child {
+    height: 235px;
+  }
+  .service-info .option:nth-child(3) {
+    height: 240px;
+  }
+
+  .photo-block, .photo-block--2, .photo-block--3 {
+    height: 300px;
+  }
+
+  .how-it-works {
+    padding: 4rem 5% 7rem;
+  }
+  .how-it-works h2 {
+    font-size: 3rem;
+  }
+  .how-it-works__steps {
+    align-items: center;
+    padding-left: 0;
+    padding-right: 3rem;
+  }
+  .how-it-works__steps .step:nth-child(odd) p {
+    padding-right: 2rem;
+  }
+  .how-it-works__steps .step:nth-child(odd):before {
+    left: unset;
+    right: -40px;
+  }
+  .how-it-works__steps .step:nth-child(even) p {
+    padding-left: 2rem;
+  }
+  .how-it-works__steps .step:nth-child(even):before {
+    right: unset;
+    left: -40px;
+  }
+
+  .feedback {
+    padding: 4rem 5% 8rem;
+  }
+  .feedback h2 {
+    font-size: 2.6rem;
+  }
+
+  .advantages {
+    padding: 3rem 7% 1rem;
+  }
+  .advantages h2 {
+    font-size: 3rem;
+  }
+
+  .call-to-action h2 {
+    font-size: 2.4rem;
+  }
+  .call-to-action p {
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    padding: 4rem 12% 5rem;
+  }
+}
+@media (max-width: 375px) {
+  .header {
+    padding: 1.5rem 2% 6rem;
+  }
+  .header a.brand img {
+    width: 110px;
+  }
+  .header h1 {
+    font-size: 2.6rem;
+  }
+  .header h2 {
+    font-size: 2.2rem;
+  }
+  .header h3 {
+    font-size: 1.4rem;
+  }
+  .header h3 b {
+    font-size: 1.6rem;
+  }
+  .header .hamburger i {
+    font-size: 2rem;
+  }
+  .header .hamburger span {
+    font-size: 1.4rem;
+  }
+  .header .menu-hidden {
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+  }
+  .header .menu-hidden .menu {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .header .menu-hidden .menu li {
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+  }
+  .header .intro {
+    margin-top: 11rem;
+  }
+  .header .intro a {
+    padding: 1rem 2rem;
+    width: 190px;
+    font-size: 1.4rem;
+  }
+
+  .call-to-join {
+    font-size: 1.4rem;
+  }
+
+  .service-info {
+    padding: 5rem 0% 7rem;
+  }
+  .service-info h2 {
+    font-size: 2.4rem;
+  }
+  .service-info .option h3 {
+    font-size: 1.6rem;
+  }
+  .service-info .option:first-child {
+    height: 240px;
+  }
+
+  .photo-block, .photo-block--2, .photo-block--3 {
+    height: 280px;
+  }
+
+  .how-it-works {
+    padding: 4rem 5% 7rem;
+  }
+  .how-it-works h2 {
+    font-size: 2.4rem;
+  }
+  .how-it-works a {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+  .how-it-works__steps {
+    padding-right: 2rem;
+  }
+  .how-it-works__steps h3 {
+    font-size: 1.8rem;
+  }
+  .how-it-works__steps p {
+    font-size: 1.2rem;
+  }
+
+  .feedback h2 {
+    font-size: 2.4rem;
+  }
+  .feedback__posts {
+    margin-top: 4rem;
+  }
+
+  .advantages {
+    padding: 3rem 7% 1rem;
+  }
+  .advantages h2 {
+    font-size: 2.6rem;
+  }
+  .advantages a {
+    width: 165px;
+    font-size: 1.2rem;
+  }
+
+  .call-to-action p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .call-to-action a {
+    font-size: 1.2rem;
+    width: 165px;
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    padding: 4rem 12% 5rem;
   }
 }
 

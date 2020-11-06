@@ -1,0 +1,138 @@
+// SM PHONE WIDTH -> PHONE WIDTH
+
+@media (max-width: $mdPhoneWidth) {
+  // HEADER
+  .header {
+    padding: 1.5rem 2% 6rem;
+    a.brand {
+      img {
+        width: 110px;
+      }
+    }
+    h1 {
+      font-size: 2.6rem;
+    }
+    h2 {
+      font-size: 2.2rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+      b {
+        font-size: 1.6rem;
+      }
+    }
+    .hamburger {
+      i {
+        font-size: 2rem;
+      }
+      span {
+        font-size: 1.4rem;
+      }
+    }
+    .menu-hidden {
+      padding-top: 5rem;
+      padding-bottom: 1.5rem;
+      .menu {
+        align-items: center;
+        flex-direction: column-reverse;
+        li {
+          margin-bottom: 0.6rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .intro {
+      margin-top: 11rem;
+      a {
+        padding: 1rem 2rem;
+        width: 190px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  // CALL TO JOIN
+  .call-to-join {
+    font-size: 1.4rem;
+  }
+
+  // SERVICE INFO
+  .service-info {
+    padding: 5rem 0% 7rem;
+    h2 {
+      font-size: 2.4rem;
+    }
+    .option h3 {
+      font-size: 1.6rem;
+    }
+    .option:first-child {
+      height: 240px;
+    }
+  }
+
+  // PHOTO BLOCKS
+  .photo-block {
+    height: 280px;
+  }
+
+  // HOW IT WORKS
+  .how-it-works {
+    padding: 4rem 5% 7rem;
+    h2 {
+      font-size: 2.4rem;
+    }
+    a {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+    &__steps {
+      padding-right: 2rem;
+      h3 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  // FEEDBACK
+  .feedback {
+    h2 {
+      font-size: 2.4rem;
+    }
+    &__posts {
+      margin-top: 4rem;
+    }
+  }
+
+  // ADVANTAGES
+  .advantages {
+    padding: 3rem 7% 1rem;
+    h2 {
+      font-size: 2.6rem;
+    }
+    a {
+      width: 165px;
+      font-size: 1.2rem;
+    }
+  }
+
+  // CALL TO ACTION
+  .call-to-action {
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    a {
+      font-size: 1.2rem;
+      width: 165px;
+    }
+  }
+
+  // FOOTER
+  .footer {
+    flex-direction: column-reverse;
+    padding: 4rem 12% 5rem;
+  }
+}

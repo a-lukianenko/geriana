@@ -1,0 +1,129 @@
+// PHONE WIDTH
+
+@media (max-width: $phoneWidth) {
+  // HEADER
+  .header {
+    padding: 1.5rem 2% 8rem;
+    a.brand {
+      padding: 0;
+      img {
+        width: 140px;
+      }
+    }
+    h1 {
+      font-size: 2.6rem;
+    }
+    h2 {
+      font-size: 2.2rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+      b {
+        font-size: 1.6rem;
+      }
+    }
+    .menu-hidden {
+      padding-top: 5rem;
+      padding-bottom: 1.5rem;
+      .menu {
+        align-items: center;
+        flex-direction: column-reverse;
+        li {
+          margin-bottom: 0.6rem;
+        }
+      }
+    }
+    .intro {
+      margin-top: 11rem;
+    }
+  }
+
+  // CALL TO JOIN
+  .call-to-join {
+    font-size: 1.6rem;
+  }
+
+  // SERVICE INFO
+  .service-info {
+    h2 {
+      font-size: 2.8rem;
+    }
+    .option h3 {
+      font-size: 1.6rem;
+    }
+    .option:first-child {
+      height: 235px;
+    }
+    .option:nth-child(3) {
+      height: 240px;
+    }
+  }
+
+  // PHOTO BLOCKS
+  .photo-block {
+    height: 300px;
+  }
+
+  // HOW IT WORKS
+  .how-it-works {
+    padding: 4rem 5% 7rem;
+    h2 {
+      font-size: 3rem;
+    }
+    &__steps {
+      align-items: center;
+      padding-left: 0;
+      padding-right: 3rem;
+      .step:nth-child(odd) {
+        p {
+          padding-right: 2rem;
+        }
+        &:before {
+          left: unset;
+          right: -40px;
+        }
+      }
+      .step:nth-child(even) {
+        p {
+          padding-left: 2rem;
+        }
+        &:before {
+          right: unset;
+          left: -40px;
+        }
+      }
+    }
+  }
+
+  // FEEDBACK
+  .feedback {
+    padding: 4rem 5% 8rem;
+    h2 {
+      font-size: 2.6rem;
+    }
+  }
+
+  // ADVANTAGES
+  .advantages {
+    padding: 3rem 7% 1rem;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  // CALL TO ACTION
+  .call-to-action {
+    h2 {
+      font-size: 2.4rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  // FOOTER
+  .footer {
+    flex-direction: column-reverse;
+    padding: 4rem 12% 5rem;
+  }
+}
