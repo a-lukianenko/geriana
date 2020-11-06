@@ -14,7 +14,7 @@ html {
 body {
   max-width: 1440px;
   margin: auto;
-  font-family: $mavenRegular, Arial, sans-serif;
+  font-family: $mainFontRegular, Arial, sans-serif;
 }
 
 ul {
@@ -29,13 +29,4 @@ a {
   &:hover {
     opacity: 0.7;
   }
-}
-
-button {
-  outline: transparent;
-  cursor: pointer;
-}
-
-input {
-  outline: transparent;
 }

@@ -6,13 +6,13 @@
   background-size: cover;
   color: white;
   &:before {
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 0;
-    content: "";
     background-color: rgba(23, 49, 83, 0.4);
   }
 }
@@ -32,10 +32,7 @@
     width: 50%;
     .brand img {
       width: 260px;
-      height: 60px;
-    }
-    li:nth-child(2) {
-      margin-left: 2.5rem;
+      height: auto;
     }
     .menu {
       display: flex;
@@ -46,7 +43,10 @@
       border-radius: 0.7rem;
       padding: 0.8rem 1.5rem;
       font-size: 1.6rem;
-      font-family: $mavenBold, sans-serif;
+      font-family: $mainFontBold, sans-serif;
+    }
+    li:nth-child(2) {
+      margin-left: 2.5rem;
     }
 
     .fa-question-circle {
@@ -80,17 +80,17 @@
   margin-top: 9rem;
   text-align: center;
   h1 {
-    font: 900 8rem $mavenBlack;
+    font: 900 8rem $mainFontBlack;
     color: $cyan;
   }
   h2 {
-    font: 900 5.8rem $mavenBlack;
+    font: 900 5.8rem $mainFontBlack;
   }
   h3 {
     margin-top: 3rem;
-    font: 400 2.6rem $mavenRegular;
+    font: 400 2.6rem $mainFontRegular;
     b {
-      font: 2.6rem $mavenBold;
+      font: 2.6rem $mainFontBold;
       color: $cyan;
     }
   }
@@ -101,7 +101,7 @@
     border-radius: 4px;
     padding: 1.5rem 3rem;
     width: 255px;
-    font: 1.8rem $mavenBold;
+    font: 1.8rem $mainFontBold;
     text-transform: uppercase;
     background-color: $red;
   }

@@ -1,5 +1,4 @@
 // FONTS
-
 @font-face {
   font-family: MavenPro-Regular;
   src: url(fonts/MavenPro-Regular.ttf);
@@ -20,10 +19,10 @@
   src: url(fonts/MavenPro-Black.ttf);
 }
 
-$mavenRegular: MavenPro-Regular;
-$mavenMedium: MavenPro-Medium;
-$mavenBold: MavenPro-Bold;
-$mavenBlack: MavenPro-Black;
+$mainFontRegular: MavenPro-Regular;
+$mainFontMedium: MavenPro-Medium;
+$mainFontBold: MavenPro-Bold;
+$mainFontBlack: MavenPro-Black;
 
 // COLORS
 $darkBlue: #0b2a37;
@@ -32,7 +31,6 @@ $cyan: #66cfcf;
 $red: #ff5151;
 
 // VIEWPORTS
-$bgDesktopWidth: 1440px;
 $desktopWidth: 1280px;
 $laptopWidth: 1024px;
 $tabletWidth: 768px;

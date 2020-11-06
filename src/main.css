@@ -47,15 +47,6 @@ a:hover {
   opacity: 0.7;
 }
 
-button {
-  outline: transparent;
-  cursor: pointer;
-}
-
-input {
-  outline: transparent;
-}
-
 .header {
   position: relative;
   padding: 2rem 2% 12rem;
@@ -64,13 +55,13 @@ input {
   color: white;
 }
 .header:before {
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 0;
-  content: "";
   background-color: rgba(23, 49, 83, 0.4);
 }
 
@@ -92,10 +83,7 @@ input {
 }
 .nav__menu-left .brand img {
   width: 260px;
-  height: 60px;
-}
-.nav__menu-left li:nth-child(2) {
-  margin-left: 2.5rem;
+  height: auto;
 }
 .nav__menu-left .menu {
   display: flex;
@@ -107,6 +95,9 @@ input {
   padding: 0.8rem 1.5rem;
   font-size: 1.6rem;
   font-family: MavenPro-Bold, sans-serif;
+}
+.nav__menu-left li:nth-child(2) {
+  margin-left: 2.5rem;
 }
 .nav__menu-left .fa-question-circle {
   margin-right: 0.8rem;
@@ -644,18 +635,18 @@ input {
     font-size: 1.6rem;
   }
   .header .nav__menu-left {
-    width: 60%;
+    width: 65%;
   }
   .header .nav__menu-left a {
     padding: 0.6rem 1.2rem;
     font-size: 1.4rem;
   }
   .header .brand img {
-    width: 220px;
+    width: 190px;
     height: auto;
   }
   .header .nav__menu-right {
-    width: 23%;
+    width: 29%;
   }
 
   .service-info .option {

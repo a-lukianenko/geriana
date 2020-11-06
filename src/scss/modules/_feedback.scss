@@ -3,7 +3,7 @@
   padding: 7rem 2% 10rem;
   color: $darkBlue;
   h2 {
-    font: 3.6rem $mavenBlack;
+    font: 3.6rem $mainFontBlack;
     text-align: center;
   }
   &__posts {
@@ -62,7 +62,7 @@
     padding-right: 6rem;
     font-size: 1.6rem;
     &__name {
-      font-family: $mavenBold;
+      font-family: $mainFontBold;
     }
   }
 }
