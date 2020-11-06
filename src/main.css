@@ -266,8 +266,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 26rem;
-  padding-right: 20rem;
+  padding-left: 13rem;
+  padding-right: 13rem;
 }
 .how-it-works__steps .step {
   position: relative;
