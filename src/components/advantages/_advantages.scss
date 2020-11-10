@@ -1,4 +1,7 @@
 // ADVANTAGES
+.service-advantages {
+  background-color: $blue;
+}
 .advantages {
   display: flex;
   flex-direction: row-reverse;
@@ -7,8 +10,7 @@
   background-image: url(img/heart.png);
   background-repeat: no-repeat;
   background-size: 47%;
-  background-position: 115% 152%;
-  background-color: $blue;
+  background-position: 97% 180%;
   color: white;
   &__summary {
     padding-left: 19rem;

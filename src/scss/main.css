@@ -337,9 +337,7 @@ a:hover {
   height: 192px;
   background-image: url(img/arrow_right.png);
 }
-.how-it-works__steps .step:nth-child(2) :before {
-  content: "";
-  position: absolute;
+.how-it-works__steps .step:nth-child(2):before {
   right: -80px;
   width: 63px;
   height: 62px;
@@ -349,7 +347,7 @@ a:hover {
   content: "";
   position: absolute;
   top: 8px;
-  right: -286px;
+  left: -286px;
   width: 256px;
   height: 192px;
   background-image: url(img/arrow_left.png);

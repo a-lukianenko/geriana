@@ -5,7 +5,7 @@
   .header {
     .nav {
       flex-direction: row-reverse;
-      padding: 0 2%;
+      padding: 0 5%;
     }
     .nav__menu-right {
       li:first-child,
@@ -126,7 +126,7 @@
   }
 
   // FOOTER
-  .footer {
+  .footer-nav {
     flex-direction: column-reverse;
     h3 {
       margin-right: 3rem;

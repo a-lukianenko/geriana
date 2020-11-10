@@ -1,9 +1,10 @@
 // HEADER
 .header {
   position: relative;
-  padding: 2rem 2% 12rem;
+  padding: 2rem 2% 17%;
   background-image: url(img/header_bg.jpg);
   background-size: cover;
+  background-position: center;
   color: white;
   &:before {
     content: "";
@@ -25,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
+
   &__menu-left {
     display: flex;
     justify-content: space-between;
@@ -75,9 +77,30 @@
   }
 }
 
+.nav.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-shadow: 0 0px 5px black;
+  background-color: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+  .nav__menu-right {
+    margin-bottom: 0;
+  }
+  .menu__item a {
+    border: 2px solid black;
+  }
+}
+
 .intro {
   position: relative;
-  margin-top: 9rem;
+  margin-top: 33%;
   text-align: center;
   h1 {
     font: 900 8rem $mainFontBlack;

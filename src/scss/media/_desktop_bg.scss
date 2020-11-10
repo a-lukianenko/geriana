@@ -1,0 +1,11 @@
+// MEDIA QUERIES
+
+@media (max-width: $bgDesktopWidth) {
+  // HEADER
+  .header {
+    padding: 2rem 2% 23%;
+  }
+  .intro {
+    margin-top: 23%;
+  }
+}

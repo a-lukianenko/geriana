@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  max-width: 1440px;
+  // max-width: 1440px;
   margin: auto;
   font-family: $mainFontRegular, Arial, sans-serif;
 }
@@ -29,4 +29,9 @@ a {
   &:hover {
     opacity: 0.7;
   }
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
 }

@@ -1,8 +1,10 @@
 // HOW IT WORKS
+.service-description {
+  background-color: $cyan;
+}
 .how-it-works {
   display: flex;
   padding: 12rem 2% 12rem 4%;
-  background-color: $cyan;
   color: white;
   &__summary {
     width: 50%;
@@ -21,7 +23,7 @@
     }
   }
   &__steps {
-    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,16 +57,38 @@
       }
     }
 
-    .step:first-child:before {
-      width: 63px;
-      height: 63px;
-      background: url(img/css_sprites.png) -399px -10px;
+    .step:first-child {
+      &:before {
+        width: 63px;
+        height: 63px;
+        background: url(img/css_sprites.png) -399px -10px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        right: -286px;
+        width: 256px;
+        height: 192px;
+        background-image: url(img/arrow_right.png);
+      }
     }
 
     .step:nth-child(2):before {
+      right: -80px;
       width: 63px;
       height: 62px;
       background: url(img/css_sprites.png) -150px -10px;
+    }
+
+    .step:nth-child(2):after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -286px;
+      width: 256px;
+      height: 192px;
+      background-image: url(img/arrow_left.png);
     }
 
     .step:nth-child(3):before {

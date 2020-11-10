@@ -1,11 +1,13 @@
 // FOOTER
-
 .footer {
+  background-color: $darkBlue;
+}
+
+.footer-nav {
   display: flex;
   justify-content: space-between;
   padding: 9rem;
   color: white;
-  background-color: $darkBlue;
 }
 
 .credentials {
@@ -40,7 +42,7 @@
   }
 }
 
-.footer__navigation {
+.footer-nav__navigation {
   display: flex;
   justify-content: space-between;
   width: 50%;

@@ -2,12 +2,17 @@
 
 @media (max-width: $desktopWidth) {
   // HEADER
-  .nav__menu-left {
-    width: 60%;
+  .header {
+    padding: 2rem 2% 27%;
+    .nav__menu-left {
+      width: 60%;
+    }
+    .nav__menu-right {
+      width: 23%;
+    }
   }
-
-  .nav__menu-right {
-    width: 23%;
+  .intro {
+    margin-top: 20%;
   }
 
   // SERVICE INFO
@@ -95,7 +100,7 @@
   }
 
   // FOOTER
-  .footer {
+  .footer-nav {
     padding: 5rem 5% 8rem;
     &__navigation {
       width: 60%;
