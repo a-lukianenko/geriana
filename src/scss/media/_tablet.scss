@@ -75,7 +75,7 @@
   // HOW IT WORKS
   .how-it-works {
     flex-direction: column;
-    padding: 5rem 4% 7rem;
+    padding: 5rem 7% 7rem;
     &__summary {
       margin-bottom: 6rem;
       width: 100%;
@@ -90,10 +90,25 @@
       }
     }
     &__steps {
-      padding-left: 8rem;
-      padding-right: 8rem;
+      margin-top: 4rem;
+      padding-left: 12rem;
+      padding-right: 12rem;
       .step {
         width: 80%;
+        img {
+          width: 65%;
+          top: 12px;
+        }
+        .arrow_right {
+          left: 120%;
+        }
+
+        .arrow_left {
+          right: 120%;
+        }
+      }
+      .step:nth-child(3):before {
+        top: -28px;
       }
     }
   }

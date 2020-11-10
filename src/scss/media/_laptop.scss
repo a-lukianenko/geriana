@@ -30,7 +30,7 @@
     }
 
     .brand img {
-      width: 190px;
+      width: 180px;
       height: auto;
     }
 
@@ -53,8 +53,15 @@
 
   // HOW IT WORKS
   .how-it-works {
+    flex-direction: column;
+    align-items: center;
     &__summary {
+      width: 100%;
+      text-align: center;
       h2 {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        padding: 0 3rem;
         font-size: 4rem;
       }
       a {
@@ -63,9 +70,23 @@
       }
     }
     &__steps {
-      padding-left: 12rem;
-      padding-right: 8rem;
+      margin-top: 8rem;
+      padding-left: 11rem;
+      padding-right: 11rem;
       width: auto;
+      .step {
+        img {
+          width: 45%;
+        }
+        .arrow_right {
+          left: 100%;
+        }
+
+        .arrow_left {
+          right: 100%;
+        }
+      }
+
       .step:nth-child(odd) {
         margin-bottom: 4rem;
       }

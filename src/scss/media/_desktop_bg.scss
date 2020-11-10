@@ -8,4 +8,17 @@
   .intro {
     margin-top: 23%;
   }
+
+  // HOW IT WORKS
+  .how-it-works {
+    padding: 12rem 4% 12rem 4%;
+  }
+  .how-it-works__summary h2 {
+    font-size: 5.2rem;
+  }
+  .how-it-works__steps {
+    // padding-left: 0;
+    // padding-right: 0;
+    max-width: 580px;
+  }
 }

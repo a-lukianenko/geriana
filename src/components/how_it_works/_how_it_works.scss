@@ -31,76 +31,99 @@
     padding-right: 13rem;
     .step {
       position: relative;
-      width: 75%;
+      // width: 75%;
+      img {
+        position: absolute;
+        top: 8px;
+        width: 62%;
+      }
+      .arrow_right {
+        left: 88%;
+      }
+      .arrow_left {
+        right: 88%;
+      }
     }
 
-    .step:nth-child(3) {
-      margin-top: 4rem;
-    }
-
-    .step:nth-child(odd) {
+    .step:first-child {
       margin-bottom: 6rem;
       &:before {
         content: "";
         position: absolute;
         left: -80px;
+        width: 63px;
+        height: 63px;
+        background: url(img/css_sprites.png) -399px -10px;
       }
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 8px;
+      //   right: -270px;
+      //   width: 256px;
+      //   height: 192px;
+      //   background-image: url(img/arrow_right.png);
+      // }
     }
 
-    .step:nth-child(even) {
+    .step:nth-child(2) {
       align-self: flex-end;
       text-align: right;
       &:before {
         content: "";
         position: absolute;
         right: -80px;
+        top: -10px;
+        width: 63px;
+        height: 62px;
+        background: url(img/css_sprites.png) -150px -10px;
       }
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 13px;
+      //   left: -270px;
+      //   width: 256px;
+      //   height: 192px;
+      //   background-image: url(img/arrow_left.png);
+      // }
     }
 
-    .step:first-child {
+    .step:nth-child(3) {
+      margin-top: 4rem;
+      margin-bottom: 6rem;
       &:before {
-        width: 63px;
-        height: 63px;
-        background: url(img/css_sprites.png) -399px -10px;
-      }
-      &:after {
         content: "";
         position: absolute;
-        top: 8px;
-        right: -286px;
-        width: 256px;
-        height: 192px;
-        background-image: url(img/arrow_right.png);
+        left: -80px;
+        top: -17px;
+        width: 63px;
+        height: 62px;
+        background: url(img/css_sprites.png) -316px -10px;
       }
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 8px;
+      //   right: -270px;
+      //   width: 256px;
+      //   height: 192px;
+      //   background-image: url(img/arrow_right.png);
+      // }
     }
 
-    .step:nth-child(2):before {
-      right: -80px;
-      width: 63px;
-      height: 62px;
-      background: url(img/css_sprites.png) -150px -10px;
-    }
-
-    .step:nth-child(2):after {
-      content: "";
-      position: absolute;
-      top: 8px;
-      left: -286px;
-      width: 256px;
-      height: 192px;
-      background-image: url(img/arrow_left.png);
-    }
-
-    .step:nth-child(3):before {
-      width: 63px;
-      height: 62px;
-      background: url(img/css_sprites.png) -316px -10px;
-    }
-
-    .step:last-child:before {
-      width: 63px;
-      height: 62px;
-      background: url(img/css_sprites.png) -233px -10px;
+    .step:last-child {
+      align-self: flex-end;
+      text-align: right;
+      &:before {
+        content: "";
+        position: absolute;
+        right: -80px;
+        top: -10px;
+        width: 63px;
+        height: 62px;
+        background: url(img/css_sprites.png) -233px -10px;
+      }
     }
 
     h3 {

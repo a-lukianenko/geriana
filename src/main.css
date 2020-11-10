@@ -301,65 +301,64 @@ a:hover {
 }
 .how-it-works__steps .step {
   position: relative;
-  width: 75%;
 }
-.how-it-works__steps .step:nth-child(3) {
-  margin-top: 4rem;
+.how-it-works__steps .step img {
+  position: absolute;
+  top: 8px;
+  width: 62%;
 }
-.how-it-works__steps .step:nth-child(odd) {
+.how-it-works__steps .step .arrow_right {
+  left: 88%;
+}
+.how-it-works__steps .step .arrow_left {
+  right: 88%;
+}
+.how-it-works__steps .step:first-child {
   margin-bottom: 6rem;
 }
-.how-it-works__steps .step:nth-child(odd):before {
+.how-it-works__steps .step:first-child:before {
   content: "";
   position: absolute;
   left: -80px;
-}
-.how-it-works__steps .step:nth-child(even) {
-  align-self: flex-end;
-  text-align: right;
-}
-.how-it-works__steps .step:nth-child(even):before {
-  content: "";
-  position: absolute;
-  right: -80px;
-}
-.how-it-works__steps .step:first-child:before {
   width: 63px;
   height: 63px;
   background: url(img/css_sprites.png) -399px -10px;
 }
-.how-it-works__steps .step:first-child:after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: -286px;
-  width: 256px;
-  height: 192px;
-  background-image: url(img/arrow_right.png);
+.how-it-works__steps .step:nth-child(2) {
+  align-self: flex-end;
+  text-align: right;
 }
-.how-it-works__steps .step:nth-child(2) :before {
+.how-it-works__steps .step:nth-child(2):before {
   content: "";
   position: absolute;
   right: -80px;
+  top: -10px;
   width: 63px;
   height: 62px;
   background: url(img/css_sprites.png) -150px -10px;
 }
-.how-it-works__steps .step:nth-child(2):after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: -286px;
-  width: 256px;
-  height: 192px;
-  background-image: url(img/arrow_left.png);
+.how-it-works__steps .step:nth-child(3) {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 .how-it-works__steps .step:nth-child(3):before {
+  content: "";
+  position: absolute;
+  left: -80px;
+  top: -17px;
   width: 63px;
   height: 62px;
   background: url(img/css_sprites.png) -316px -10px;
 }
+.how-it-works__steps .step:last-child {
+  align-self: flex-end;
+  text-align: right;
+}
 .how-it-works__steps .step:last-child:before {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: -10px;
   width: 63px;
   height: 62px;
   background: url(img/css_sprites.png) -233px -10px;
@@ -577,6 +576,18 @@ a:hover {
   .intro {
     margin-top: 23%;
   }
+
+  .how-it-works {
+    padding: 12rem 4% 12rem 4%;
+  }
+
+  .how-it-works__summary h2 {
+    font-size: 5.2rem;
+  }
+
+  .how-it-works__steps {
+    max-width: 580px;
+  }
 }
 @media (max-width: 1280px) {
   .header {
@@ -619,14 +630,15 @@ a:hover {
     padding: 7rem 5%;
   }
   .how-it-works__summary {
-    width: 40%;
+    width: 37%;
   }
   .how-it-works__summary h2 {
-    font-size: 5.2rem;
+    font-size: 4.8rem;
   }
   .how-it-works__steps {
-    padding-left: 15rem;
-    padding-right: 9rem;
+    padding-left: 18rem;
+    padding-right: 11rem;
+    max-width: 560px;
   }
   .how-it-works__steps h3 {
     font-size: 2rem;
@@ -714,7 +726,7 @@ a:hover {
     font-size: 1.4rem;
   }
   .header .brand img {
-    width: 190px;
+    width: 180px;
     height: auto;
   }
   .header .nav__menu-right {
@@ -729,7 +741,18 @@ a:hover {
     height: 425px;
   }
 
+  .how-it-works {
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-it-works__summary {
+    width: 100%;
+    text-align: center;
+  }
   .how-it-works__summary h2 {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding: 0 3rem;
     font-size: 4rem;
   }
   .how-it-works__summary a {
@@ -737,9 +760,19 @@ a:hover {
     font-size: 1.6rem;
   }
   .how-it-works__steps {
-    padding-left: 12rem;
-    padding-right: 8rem;
+    margin-top: 8rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
     width: auto;
+  }
+  .how-it-works__steps .step img {
+    width: 45%;
+  }
+  .how-it-works__steps .step .arrow_right {
+    left: 100%;
+  }
+  .how-it-works__steps .step .arrow_left {
+    right: 100%;
   }
   .how-it-works__steps .step:nth-child(odd) {
     margin-bottom: 4rem;
@@ -843,7 +876,7 @@ a:hover {
 
   .how-it-works {
     flex-direction: column;
-    padding: 5rem 4% 7rem;
+    padding: 5rem 7% 7rem;
   }
   .how-it-works__summary {
     margin-bottom: 6rem;
@@ -859,11 +892,25 @@ a:hover {
     font-size: 1.4rem;
   }
   .how-it-works__steps {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    margin-top: 4rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
   .how-it-works__steps .step {
     width: 80%;
+  }
+  .how-it-works__steps .step img {
+    width: 65%;
+    top: 12px;
+  }
+  .how-it-works__steps .step .arrow_right {
+    left: 120%;
+  }
+  .how-it-works__steps .step .arrow_left {
+    right: 120%;
+  }
+  .how-it-works__steps .step:nth-child(3):before {
+    top: -28px;
   }
 
   .feedback h2 {
@@ -939,7 +986,7 @@ a:hover {
   }
 
   .how-it-works {
-    padding: 5rem 5% 7rem;
+    padding: 4rem 2rem 7rem;
   }
   .how-it-works__summary {
     text-align: center;
@@ -947,6 +994,9 @@ a:hover {
   .how-it-works__steps {
     padding-left: 9rem;
     padding-right: 9rem;
+  }
+  .how-it-works__steps .step img {
+    display: none;
   }
 
   .feedback__posts {
@@ -962,7 +1012,7 @@ a:hover {
     padding: 3rem 7% 4rem;
   }
   .advantages__summary {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     text-align: center;
   }
   .advantages__summary h2 {
@@ -1070,27 +1120,30 @@ a:hover {
   }
 
   .how-it-works {
-    padding: 4rem 5% 7rem;
+    padding: 4rem 2% 7rem;
   }
   .how-it-works h2 {
     font-size: 3rem;
   }
   .how-it-works__steps {
     align-items: center;
+    margin-top: 0;
     padding-left: 0;
     padding-right: 3rem;
   }
   .how-it-works__steps .step:nth-child(odd) p {
-    padding-right: 2rem;
+    padding-right: 4rem;
   }
   .how-it-works__steps .step:nth-child(odd):before {
+    top: 0;
     left: unset;
     right: -40px;
   }
   .how-it-works__steps .step:nth-child(even) p {
-    padding-left: 2rem;
+    padding-left: 4rem;
   }
   .how-it-works__steps .step:nth-child(even):before {
+    top: 0;
     right: unset;
     left: -40px;
   }
