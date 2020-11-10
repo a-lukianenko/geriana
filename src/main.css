@@ -42,9 +42,6 @@ a {
   outline: transparent;
   transition: all 0.25s ease-out;
 }
-a:hover {
-  opacity: 0.7;
-}
 
 .wrapper {
   margin: 0 auto;
@@ -179,6 +176,9 @@ a:hover {
   font: 1.8rem MavenPro-Bold;
   text-transform: uppercase;
   background-color: #ff5151;
+}
+.intro a:hover {
+  background-color: #fa1a1a;
 }
 
 .call-to-join {

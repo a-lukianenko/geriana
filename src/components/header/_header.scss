@@ -127,5 +127,8 @@
     font: 1.8rem $mainFontBold;
     text-transform: uppercase;
     background-color: $red;
+    &:hover {
+      background-color: #fa1a1a;
+    }
   }
 }
