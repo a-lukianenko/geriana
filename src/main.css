@@ -49,22 +49,25 @@ a {
 }
 
 .header {
-  position: relative;
-  padding: 2rem 2% 17%;
-  background-image: url(img/header_bg.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-.header:before {
-  content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
-  bottom: 0;
-  left: 0;
   right: 0;
-  z-index: 0;
-  background-color: rgba(23, 49, 83, 0.4);
+  left: 0;
+  z-index: 2;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.sticky {
+  box-shadow: 0 0px 5px black;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+.header.sticky .menu__item a {
+  border: 2px solid black;
+}
+.header.sticky .brand img {
+  filter: drop-shadow(1px 0 3px #005173);
 }
 
 .menu-hidden {
@@ -76,6 +79,7 @@ a {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  padding: 1rem 4rem;
 }
 .nav__menu-left {
   display: flex;
@@ -84,7 +88,7 @@ a {
   width: 50%;
 }
 .nav__menu-left .brand img {
-  width: 260px;
+  width: 220px;
   height: auto;
 }
 .nav__menu-left .menu {
@@ -95,8 +99,7 @@ a {
   border: 2px solid white;
   border-radius: 0.7rem;
   padding: 0.8rem 1.5rem;
-  font-size: 1.6rem;
-  font-family: MavenPro-Bold, sans-serif;
+  font: 1.6rem MavenPro-Bold, sans-serif;
 }
 .nav__menu-left li:nth-child(2) {
   margin-left: 2.5rem;
@@ -108,7 +111,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   width: 19%;
   font-size: 1.6rem;
 }
@@ -125,31 +127,29 @@ a {
   margin-right: 8px;
 }
 
-.nav.sticky {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  justify-content: space-between;
-  padding-left: 3%;
-  padding-right: 3%;
-  box-shadow: 0 0px 5px black;
-  background-color: white;
-  color: black;
-  transition: all 0.25s ease-in-out;
-}
-.nav.sticky .nav__menu-right {
-  margin-bottom: 0;
-}
-.nav.sticky .menu__item a {
-  border: 2px solid black;
-}
-
 .intro {
   position: relative;
-  margin-top: 15%;
+  padding: 30rem 2% 20rem;
   text-align: center;
+  background-image: url(img/header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+.intro:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-color: rgba(23, 49, 83, 0.4);
+}
+.intro .wrapper {
+  position: relative;
+  z-index: 1;
 }
 .intro h1 {
   font: 900 8rem MavenPro-Black;
@@ -253,7 +253,7 @@ a {
 
 .photo-block, .photo-block--3, .photo-block--2 {
   height: 540px;
-  background-image: url(img/banner_1.png);
+  background-image: url(img/banner_1.jpg);
   background-size: cover;
   background-position-y: 25%;
 }
@@ -569,16 +569,12 @@ a {
 }
 
 @media (max-width: 1440px) {
-  .header {
-    padding: 2rem 2% 23%;
-  }
-
   .intro {
-    margin-top: 23%;
+    padding: 28rem 2%;
   }
 
   .how-it-works {
-    padding: 12rem 4% 12rem 4%;
+    padding: 12rem 4% 12rem;
   }
 
   .how-it-works__summary h2 {
@@ -590,18 +586,11 @@ a {
   }
 }
 @media (max-width: 1280px) {
-  .header {
-    padding: 2rem 2% 27%;
-  }
   .header .nav__menu-left {
     width: 60%;
   }
   .header .nav__menu-right {
     width: 23%;
-  }
-
-  .intro {
-    margin-top: 20%;
   }
 
   .service-info {
@@ -713,20 +702,18 @@ a {
   .header h3 {
     font-size: 2rem;
   }
-  .header .intro a {
-    padding: 1.2rem 2.2rem;
-    width: 220px;
-    font-size: 1.6rem;
-  }
   .header .nav__menu-left {
     width: 65%;
   }
+  .header .nav__menu-left .menu__item a {
+    border-radius: 0.5rem;
+    padding: 0.4rem 1.2rem;
+  }
   .header .nav__menu-left a {
-    padding: 0.6rem 1.2rem;
     font-size: 1.4rem;
   }
   .header .brand img {
-    width: 180px;
+    width: 160px;
     height: auto;
   }
   .header .nav__menu-right {
@@ -814,7 +801,7 @@ a {
 @media (max-width: 768px) {
   .header .nav {
     flex-direction: row-reverse;
-    padding: 0 5%;
+    padding: 1rem 5%;
   }
   .header .nav__menu-right li:first-child,
 .header .nav__menu-right li:nth-child(2) {
@@ -825,9 +812,6 @@ a {
   }
   .header .nav__menu-left .menu {
     display: none;
-  }
-  .header .intro h3 {
-    padding: 0 3rem;
   }
 
   .menu-hidden {
@@ -952,9 +936,6 @@ a {
   }
 }
 @media (max-width: 640px) {
-  .header {
-    padding-bottom: 8rem;
-  }
   .header .brand img {
     width: 180px;
   }
@@ -1062,9 +1043,6 @@ a {
   }
 }
 @media (max-width: 480px) {
-  .header {
-    padding: 1.5rem 2% 8rem;
-  }
   .header a.brand {
     padding: 0;
   }
@@ -1094,8 +1072,20 @@ a {
   .header .menu-hidden .menu li {
     margin-bottom: 0.6rem;
   }
-  .header .intro {
-    margin-top: 11rem;
+
+  .intro h1 {
+    font-size: 4rem;
+  }
+  .intro h2 {
+    font-size: 3rem;
+  }
+  .intro h3 {
+    font-size: 2.3rem;
+  }
+  .intro a {
+    padding: 1rem 2rem;
+    width: 190px;
+    font-size: 1.4rem;
   }
 
   .call-to-join {
@@ -1175,9 +1165,6 @@ a {
   }
 }
 @media (max-width: 375px) {
-  .header {
-    padding: 1.5rem 2% 6rem;
-  }
   .header a.brand img {
     width: 110px;
   }
@@ -1211,13 +1198,18 @@ a {
     margin-bottom: 0.6rem;
     font-size: 1.2rem;
   }
-  .header .intro {
-    margin-top: 11rem;
+
+  .intro h1 {
+    font-size: 3.6rem;
   }
-  .header .intro a {
-    padding: 1rem 2rem;
-    width: 190px;
-    font-size: 1.4rem;
+  .intro h2 {
+    font-size: 2.8rem;
+  }
+  .intro h3 {
+    font-size: 2.2rem;
+  }
+  .intro h3 b {
+    font-size: 2.4rem;
   }
 
   .call-to-join {

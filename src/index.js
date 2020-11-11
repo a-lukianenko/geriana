@@ -15,19 +15,8 @@ function toggleMenu() {
 }
 
 function myFunction() {
-  const nav = document.getElementById("nav");
-  const logo = document.getElementById("logo");
-  const src1 = "./img/logo.png";
-  const src2 = "./img/logo_2.png";
-
-  const sticky = nav.offsetTop;
-  if (window.pageYOffset > sticky) {
-    nav.classList.add("sticky");
-    logo.src = src2;
-  } else {
-    nav.classList.remove("sticky");
-    logo.src = src1;
-  }
+  const header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 0);
 }
 
 window.onload = function () {

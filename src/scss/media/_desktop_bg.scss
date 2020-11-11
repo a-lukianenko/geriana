@@ -1,24 +1,18 @@
 // MEDIA QUERIES
 
 @media (max-width: $bgDesktopWidth) {
-  // HEADER
-  .header {
-    padding: 2rem 2% 23%;
-  }
+  // INTRO
   .intro {
-    margin-top: 23%;
+    padding: 28rem 2%;
   }
-
   // HOW IT WORKS
   .how-it-works {
-    padding: 12rem 4% 12rem 4%;
+    padding: 12rem 4% 12rem;
   }
   .how-it-works__summary h2 {
     font-size: 5.2rem;
   }
   .how-it-works__steps {
-    // padding-left: 0;
-    // padding-right: 0;
     max-width: 580px;
   }
 }

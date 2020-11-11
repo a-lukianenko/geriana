@@ -1,0 +1,53 @@
+.intro {
+  position: relative;
+  padding: 30rem 2% 20rem;
+  text-align: center;
+  background-image: url(img/header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(23, 49, 83, 0.4);
+  }
+  .wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  h1 {
+    font: 900 8rem $mainFontBlack;
+    color: $cyan;
+  }
+  h2 {
+    font: 900 5.8rem $mainFontBlack;
+  }
+  h3 {
+    margin-top: 3rem;
+    font: 400 2.6rem $mainFontRegular;
+    b {
+      font: 2.6rem $mainFontBold;
+      color: $cyan;
+    }
+  }
+  a {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border-radius: 4px;
+    padding: 1.5rem 3rem;
+    width: 255px;
+    font: 1.8rem $mainFontBold;
+    text-transform: uppercase;
+    background-color: $red;
+    &:hover {
+      background-color: #fa1a1a;
+    }
+  }
+}

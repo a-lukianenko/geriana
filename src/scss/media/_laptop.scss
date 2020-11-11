@@ -14,23 +14,19 @@
       font-size: 2rem;
     }
 
-    .intro a {
-      padding: 1.2rem 2.2rem;
-      width: 220px;
-      font-size: 1.6rem;
-    }
-
     .nav__menu-left {
       width: 65%;
-
+      .menu__item a {
+        border-radius: 0.5rem;
+        padding: 0.4rem 1.2rem;
+      }
       a {
-        padding: 0.6rem 1.2rem;
         font-size: 1.4rem;
       }
     }
 
     .brand img {
-      width: 180px;
+      width: 160px;
       height: auto;
     }
 

@@ -3,7 +3,7 @@
 @media (max-width: $phoneWidth) {
   // HEADER
   .header {
-    padding: 1.5rem 2% 8rem;
+    // padding: 1.5rem 2% 8rem;
     a.brand {
       padding: 0;
       img {
@@ -33,8 +33,23 @@
         }
       }
     }
-    .intro {
-      margin-top: 11rem;
+  }
+
+  // BANNER
+  .intro {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2.3rem;
+    }
+    a {
+      padding: 1rem 2rem;
+      width: 190px;
+      font-size: 1.4rem;
     }
   }
 

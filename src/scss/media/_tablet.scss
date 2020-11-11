@@ -5,7 +5,7 @@
   .header {
     .nav {
       flex-direction: row-reverse;
-      padding: 0 5%;
+      padding: 1rem 5%;
     }
     .nav__menu-right {
       li:first-child,
@@ -20,9 +20,9 @@
         display: none;
       }
     }
-    .intro h3 {
-      padding: 0 3rem;
-    }
+    // .intro h3 {
+    //   padding: 0 3rem;
+    // }
   }
   .menu-hidden {
     display: block;
